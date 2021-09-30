@@ -1,4 +1,4 @@
-import { fizzBuzz } from '../src/main';
+import { fizzBuzz } from './fizzBuzz';
 
 describe('fizz buzz', () => {
   it('should do nothing', () => {
