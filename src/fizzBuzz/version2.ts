@@ -6,7 +6,7 @@ const isDivisibleBy5 = (value: number): boolean => {
   return value % 5 === 0;
 };
 
-export const fizzBuzz = (value: number): string => {
+export const fizzBuzz2 = (value: number): string => {
   if (value < 0) {
     throw new Error('not negative');
   }

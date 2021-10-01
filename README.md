@@ -16,7 +16,7 @@ yarn install
 Run the main code
 
 ```
-yarn run
+yarn main
 ```
 
 Run the tests
