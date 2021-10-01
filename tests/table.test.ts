@@ -1,4 +1,4 @@
-import { fizzBuzz } from './fizzBuzz';
+import { fizzBuzz } from '../src/fizzBuzz/version1';
 describe.skip.each([
   [1, '1'],
   [2, '2'],
