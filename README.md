@@ -1,28 +1,31 @@
 # Coding Kata
 
-Projekt zum Lernen von Coding Kata und TDD in Typescript
+Project for studiying Coding Kata and TDD in Typescript
+
+Kata:
 
 - fizzBuzz
+  https://ccd-school.de/coding-dojo/function-katas/fizzbuzz/
 
-Installieren
+Install
 
 ```
 yarn install
 ```
 
-Starten
+Run the main code
 
 ```
 yarn run
 ```
 
-Tests ausführen
+Run the tests
 
 ```
 yarn test
 ```
 
-Benötigt typescript und ts-node.
+Requires installed typescript and ts-node to run
 
 ```
 npm -g install typescript ts-node
