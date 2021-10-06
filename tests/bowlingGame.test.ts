@@ -1,7 +1,15 @@
 import Game from '../src/bowlingGame/game'
 
-
-
+/*
+Bowling Regeln:
+- Es werden jeweils 10 Wiederholungen gebowlt
+- Es wird 2x mal pro Runde gebowlt
+- Gutter game: Wenn alle Kugeln daneben gehen ist die Summe 0
+- Ones: Wenn alle Kugeln nur einen Kegel treffen ist die Summe 20
+- Spare: Wenn eine Kugel einen Teil und die andere den Rest wegräumt ist die Summe 10 + die nächste Kugel x 2
+- Strike: Wenn eine Kugel alle abräumt ist die Summe 10 + die nächsten 2 Versuche x 2
+- Perfekt: Wenn in allen Runden ein Strike also 10 geworfen wird ist die Summe 300
+*/
 describe('Bowling game kata', () => {
 
     let game: Game;
@@ -52,7 +60,7 @@ describe('Bowling game kata', () => {
         rollSpare();
         game.roll(3);
         rollMany(17,0);
-        expect(game.score()).toBe(16);
+        expect(game.score()).toBe(5+5+3+3); 
     })
 
     it('should roll a strike', () => {
@@ -60,7 +68,7 @@ describe('Bowling game kata', () => {
         game.roll(3);
         game.roll(4);
         rollMany(16,0);
-        expect(game.score()).toBe(24);
+        expect(game.score()).toBe(10+7+7);
     })
 
     it('should roll a perfect game', () => {

@@ -6,6 +6,8 @@ Kata:
 
 - fizzBuzz
   https://ccd-school.de/coding-dojo/function-katas/fizzbuzz/
+- bowlingGame
+  https://ccd-school.de/coding-dojo/class-katas/bowling/  
 
 Install
 
