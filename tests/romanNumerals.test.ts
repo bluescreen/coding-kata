@@ -43,5 +43,10 @@ describe('Roman numerals kata', ()=> {
         expect(romanNumerals(28)).toEqual('XXVIII');
     })
 
+    it('should return MMXIII for 2013', () => {
+        expect(romanNumerals(2013)).toEqual('MMXIII');
+    })
+
+    
     
 })

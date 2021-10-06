@@ -1,4 +1,8 @@
 const numerals = [
+    {value: 1000, roman:'M'},
+    {value: 500, roman:'D'},
+    {value: 100, roman:'C'},
+    {value: 50, roman:'L'},
     {value: 10, roman:'X'},
     {value: 9, roman: 'IX'},
     {value: 5, roman: 'V'}, 
