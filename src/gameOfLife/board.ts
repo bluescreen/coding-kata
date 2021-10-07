@@ -24,8 +24,9 @@ export default class Board{
     }
 
     findCoordsFor(index){
-        const row = index / this.columns === 0 ? this.columns : Math.ceil(index / this.columns);
-        const col = index % this.columns === 0 ? this.columns : Math.ceil(index % this.columns); 
+
+        const col = Math.trunc((index-1)%this.columns+1);
+        const row = Math.trunc((index-1)/(this.columns)+1);
 
         return {row,col};
     }
@@ -33,9 +34,8 @@ export default class Board{
     findNeighbours(index: number): Cell[]{
         const neighbours = [];
         const coords = this.findCoordsFor(index);
-        const col = coords.col-1;
-        const row = coords.row-1; 
-
+        const col = coords.col;
+        const row = coords.row; 
 
 
         var rowLimit = this.rows-1;
@@ -61,7 +61,7 @@ export default class Board{
         const updated = [...this.cells];
         for(let i = 0;i < updated.length; i++){
             const numAlive = this.findLivingNeighbours(i);
-            //console.log(i, numAlive, this.findCoordsFor(i));
+            console.log(i,'->', numAlive, this.findCoordsFor(i));
             updated[i].tick(numAlive);
         }
         this.cells = updated;

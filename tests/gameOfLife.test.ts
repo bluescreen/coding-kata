@@ -151,6 +151,21 @@ describe('Convays game of life', ()=>{
 
     describe('Run game of life', () => {
 
+        it('should update simple 3x3 board', () => {
+            const board = new Board(3,3);
+            board.setState(
+                '**.'+
+                '*..'+
+                '...');
+
+            console.log(board.render());
+
+                
+            board.update();
+
+            console.log(board.render());
+        })
+
         it('should run one round', () => {
 
             const state = '............*......**...........';
