@@ -5,10 +5,12 @@ export default class Cell{
 
     constructor(public state: CellState){};
 
-    public tick(_neighbours: number){
-        return CellState.DEAD
+    public tick(neighbours: number){
+        this.state = neighbours < 2 || neighbours > 3 ? CellState.DEAD : CellState.ALIVE
+        return this.state;
     }
 
-    
-
+    render(){
+        return this.state === CellState.DEAD ? '.' : '*';
+    }
 }
