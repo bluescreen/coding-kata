@@ -17,8 +17,8 @@ https://youtu.be/c_vKs2O7WRQ?t=516
 https://youtu.be/IN5H99aHd5A?t=108
 
 - Stressmanagement durch Disziplin
-- Einsatz von Techniken ohne Nachdenken (Muscle Memory)
-- Spass mit Code zu experimentieren
+- Einsatz von Techniken ohne Nachdenken in Praxis (Muscle Memory)
+- Spass haben mit Code zu experimentieren
 - Diskussion mit anderen, Verbesserung
 
 ## Was kann ich mit Coding Kata lernen?
@@ -56,7 +56,16 @@ https://youtu.be/IN5H99aHd5A?t=108
 - Prime Factors
 - Game of Life
 
-## Live coding Prime Factors Kata in Typescript mit TDD
+## Live coding Prime Factors Kata in Typescript mit TDD 
+- Test First
+- Red - Green - Refactor
+- Je spezifischer die Tests desto generalisierter der Code
+- Keep it simple
+
+
+### Prime Factors Kata
+
+Schreibe eine Funktion die, die Prim Faktoren einer beliebigen Zahl berechnet.
 
 ### Step 1 Null Case
 ```
