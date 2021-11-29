@@ -7,7 +7,7 @@ https://youtu.be/c_vKs2O7WRQ?t=516
 ### 形 japanisch Kata = Form
 
 - Festlegte Abfolge von Basis Bewegungen  (Lehrer schlägt Schüler, Schüler kontert und gewinnt)
-- Sich wiederholende Übungen
+- Sich wiederholende Übungen mit Fokus auf einen kleinen Bereich
 - Erfordert Disziplin zur Perfektionierung 
 - Das Ziel ist die Übung bzw. der Lösungsweg nicht die Lösung selbst
 - Übung macht den Meister
@@ -16,17 +16,19 @@ https://youtu.be/c_vKs2O7WRQ?t=516
 
 https://youtu.be/IN5H99aHd5A?t=108
 
-- Einsatz von Techniken in stressigen Situation ohne Nachdenken
 - Stressmanagement durch Disziplin
+- Einsatz von Techniken ohne Nachdenken (Muscle Memory)
 - Spass mit Code zu experimentieren
+- Diskussion mit anderen, Verbesserung
 
 ## Was kann ich mit Coding Kata lernen?
 
+- Unterschiedliche Lösungswege für das gleiche Problem
 - Extreme Programming: TDD + Simple Design + Pair Programming + Refactoring
 - Design Pattern & Techniken
 - Code optimieren, Refactoring
 - Neue Technologien, Language Features
-- Unbekannte Programmiersprachen ( z.B. Rust bekanntes Problem in neuer Sprache lösen)
+- Unbekannte Programmiersprachen ( z.B. Golang, Rust; bekanntes Problem in neuer Sprache lösen)
 - Unbekannte Paradigmen Functional Programming (z.B. Clojure)
 - Alternative IDEs und deren Features, Hotkeys  
 
@@ -34,10 +36,10 @@ https://youtu.be/IN5H99aHd5A?t=108
 
 - Ziel in inkrementellen Schritten zur Lösung
 - Nicht das goldene Ziel versuchen direkt zu erreichen
-- Durch Extreme Programing / TDD
+- geleitet durch Extreme Programing / TDD
 - Wichtig Tests selber schreiben
 - Timeboxed ca 30-60 min
-- Mehr Challenge durch Handycaps (z.B. keine If statements erlaubt, nur Objekt orientiert, unbekannte IDE)
+- Challenge durch eigene Handycaps (z.B. keine If statements erlaubt, nur Objekt orientiert, unbekannte IDE)
 
 ## Was wird benötigt?
 
@@ -54,7 +56,7 @@ https://youtu.be/IN5H99aHd5A?t=108
 - Prime Factors
 - Game of Life
 
-## Live coding Prime Factors Kata in Typescript
+## Live coding Prime Factors Kata in Typescript mit TDD
 
 ### Step 1 Null Case
 ```
@@ -171,10 +173,10 @@ const primeFactorsOf = (n: number): number[] => {
 
 ## Links & Literatur
 
-- The Clean Craftsman Sandro Manduro
-- Clean Code, Robert C. Martin
-- The Pragmatic Prgrammer, Dave Thomass
+- The Software Craftsman: Professionalism, Pragmatism, Pride, Sandro Mancuso
+- The Clean Coder, Robert C. Martin
+- The Pragmatic Programmer, Dave Thomas
 - http://codekata.com/
 - http://codekata.com/kata/codekata-intro/
-- Codewars
-- Codinggame
+- codewars.com
+- thecodinggame.com
