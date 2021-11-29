@@ -6,20 +6,19 @@ https://youtu.be/c_vKs2O7WRQ?t=516
 
 ### 形 japanisch Kata = Form
 
-- Festlegte Abfolge von Basis Bewegungen
+- Festlegte Abfolge von Basis Bewegungen  (Lehrer schlägt Schüler, Schüler kontert und gewinnt)
 - Sich wiederholende Übungen
-- Erfordert Disziplin zur Perfektionierung
+- Erfordert Disziplin zur Perfektionierung 
 - Das Ziel ist die Übung bzw. der Lösungsweg nicht die Lösung selbst
-
+- Übung macht den Meister
 
 ## Was wollen wir erreichen?
 
 https://youtu.be/IN5H99aHd5A?t=108
 
-- Einsatz in stressigen Situation ohne Nachdenken
+- Einsatz von Techniken in stressigen Situation ohne Nachdenken
 - Stressmanagement durch Disziplin
 - Spass mit Code zu experimentieren
-
 
 ## Was kann ich mit Coding Kata lernen?
 
@@ -27,25 +26,23 @@ https://youtu.be/IN5H99aHd5A?t=108
 - Design Pattern & Techniken
 - Code optimieren, Refactoring
 - Neue Technologien, Language Features
-- Unbekannte Programmiersprachen (bekanntes Problem in neuer Sprache lösen)
-- Unbekannte Paradigmen Functional (z.B. Clojure)
-- Alternative IDEs und deren Features , Hotkeys  
+- Unbekannte Programmiersprachen ( z.B. Rust bekanntes Problem in neuer Sprache lösen)
+- Unbekannte Paradigmen Functional Programming (z.B. Clojure)
+- Alternative IDEs und deren Features, Hotkeys  
 
-
-
-## Anwendung in Software
+## Anwendung in Software Development
 
 - Ziel in inkrementellen Schritten zur Lösung
 - Nicht das goldene Ziel versuchen direkt zu erreichen
 - Durch Extreme Programing / TDD
 - Wichtig Tests selber schreiben
 - Timeboxed ca 30-60 min
-- Mehr Challenge durch Handycaps (z.B. keine If statements erlaubt, nur Objekt orientiert, unbekannte IDE, funktional)
+- Mehr Challenge durch Handycaps (z.B. keine If statements erlaubt, nur Objekt orientiert, unbekannte IDE)
 
 ## Was wird benötigt?
 
-- Funktionsfähige Unit Testumgebung für Schnelles Feedback
-- Festgelegte Zeit (ca 30 min) außerhalb der Arbeitszeit (außerhalb der Stresssituation)
+- Funktionsfähige Unit Testumgebung für schnelles Feedback
+- Festgelegte Zeit außerhalb der Arbeitszeit/Stresssituation 
 - Motivation & Bereitschaft zu lernen
 - Bereitschaft Übungen zu wiederholen
 - Mentor oder Referenz Material
@@ -57,9 +54,7 @@ https://youtu.be/IN5H99aHd5A?t=108
 - Prime Factors
 - Game of Life
 
-## Live coding Prime Factors Kata
-
-  
+## Live coding Prime Factors Kata in Typescript
 
 ### Step 1 Null Case
 ```
