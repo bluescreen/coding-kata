@@ -63,7 +63,7 @@ https://youtu.be/IN5H99aHd5A?t=108
 
 ### Step 1 Null Case
 ```
-const primeFactorsOf = (input: number): number[] => {
+const primeFactorsOf = (n: number): number[] => {
     const result = [];
     return result;
 }
@@ -71,9 +71,9 @@ const primeFactorsOf = (input: number): number[] => {
 
 ### Step 2 Split Flow Transformation
 ```
-const primeFactorsOf = (input: number): number[] => {
+const primeFactorsOf = (n: number): number[] => {
     const result = [];
-    if(input > 1){
+    if(n > 1){
 	    result.push(2);
     }
     return result;
@@ -82,26 +82,27 @@ const primeFactorsOf = (input: number): number[] => {
 
 ### Step 3 Content to Variable Transformation
 ```
-const primeFactorsOf = (input: number): number[] => {
+const primeFactorsOf = (n: number): number[] => {
     const result = [];
-    if(input > 1)
-	result.push(input);
+    if(n > 1){
+	    result.push(n);
+    }
     return result;
 }
 ```
 
 ### Step 4 Split Flow
 ```
-const primeFactorsOf = (input: number): number[] => {
+const primeFactorsOf = (n: number): number[] => {
     const result = [];
-    if(input > 1){
-        if(input % 2 === 0){
+    if(n > 1){
+        if(n % 2 === 0){
             result.push(2);
-            input /= 2;
-        }
-        if(input > 1){
-            result.push(n);
-        }
+            n /= 2;
+        }     
+    }
+    if(n > 1){
+        result.push(n);
     }
     return result;
 }
@@ -109,16 +110,16 @@ const primeFactorsOf = (input: number): number[] => {
 
 ### Step 5 If to While
 ```
-const primeFactorsOf = (input: number): number[] => {
+const primeFactorsOf = (n: number): number[] => {
     const result = [];
-    if(input > 1){
-        while(input % 2 === 0){
+    if(n > 1){
+        while(n % 2 === 0){
             result.push(2);
-            input /= 2;
+            n /= 2;
         }
-        if(input > 1){
-            result.push(n);
-        }
+    }
+    if(n > 1){
+        result.push(n);
     }
     return result;
 }
@@ -126,15 +127,15 @@ const primeFactorsOf = (input: number): number[] => {
 
 ### Step 6 Refactor to For
 ```
-const primeFactorsOf = (input: number): number[] => {
+const primeFactorsOf = (n: number): number[] => {
     const result = [];
-    if(input > 1){
-        for(; input % 2 === 0; input /= 2){
+    if(n > 1){
+        for(; n % 2 === 0; n /= 2){
             result.push(2);   
         }
-        if(input > 1){
-            result.push(n);
-        }
+    }
+    if(n > 1){
+        result.push(n);
     }
     return result;
 }
@@ -142,16 +143,16 @@ const primeFactorsOf = (input: number): number[] => {
 
 ### Step 7 Constant to Variable
 ```
-const primeFactorsOf = (input: number): number[] => {
+const primeFactorsOf = (n: number): number[] => {
     const result = [];
     let divisor = 2
-    while(input > 1){
-        for(; input % 2 === 0; input /= 2){
-            result.push(2);   
+    while(n > 1){
+        for(; n % 2 === 0; n /= divisor){
+            result.push(divisor);   
         }
         divisor++;    
     }
-    if(input > 1){
+    if(n > 1){
         result.push(n);
     }
     return result;
@@ -160,11 +161,11 @@ const primeFactorsOf = (input: number): number[] => {
 
 ### Step 8 Result Refactor to for
 ```
-const primeFactorsOf = (input: number): number[] => {
+const primeFactorsOf = (n: number): number[] => {
     const result = [];
     
-    for(let divisor = 2; input > 1; divisor++){
-        for(; input % 2 === 0; input /= divisor){
+    for(let divisor = 2; n > 1; divisor++){
+        for(; n % 2 === 0; n /= divisor){
             result.push(divisor);   
         }
     }
