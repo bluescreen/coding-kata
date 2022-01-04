@@ -252,7 +252,9 @@ describe('Prime factors Kata', () => {
   (fact (prime-factors-of 1) => [])
 )
 ```
+
 ### Beispiel Rust iterativ
+
 ```rust
 pub fn prime_factors(number : int) -> ~[int] {
     let mut number = number;
@@ -268,7 +270,9 @@ pub fn prime_factors(number : int) -> ~[int] {
     return prime_numbers;
 }
 ```
+
 ### Beispiel Rust Recursive
+
 ```rust
 fn prime_factors(num: i64) -> Vec<i64> {
     for i in 2..num {
