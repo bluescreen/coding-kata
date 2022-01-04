@@ -237,7 +237,7 @@ describe('Prime factors Kata', () => {
 
 ### Beispiel Clojure
 
-````clojure
+```clojure
 (defn prime-factors-of [n]
   (factors-starting-at 2 n))
 
@@ -248,9 +248,10 @@ describe('Prime factors Kata', () => {
       (> f (Math/sqrt n)) (if (= n 1) [] (conj result n))
       (zero? (mod n f)) (recur f (/ n f) (conj result f))
       :else (recur (inc f) n result))))
-(deftest prime-factors
-  (fact (prime-factors-of 1) => [])
-)
+      
+  (deftest prime-factors
+    (fact (prime-factors-of 1) => [])
+  )
 ```
 
 ### Beispiel Rust iterativ
