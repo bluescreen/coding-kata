@@ -224,15 +224,38 @@ describe('Prime factors Kata', () => {
     [7, [7]],
     [8, [2, 2, 2]],
     [9, [3, 3]],
-    [78, [2, 3, 13]],
     [48, [2, 2, 2, 2, 3]],
-    [1369, [37, 37]],
+    [13195, [5, 7, 13, 29]],
+    [600851475143, [71, 839, 1471, 6857]],
+    [Math.pow(2, 31) - 1, [2147483647]],
   ])('factors of %i', (input: number, expected: number[]) => {
     it(`returns ${expected}`, () => {
       expect(primeFactorsOf(input)).toEqual(expected);
     });
   });
 });
+```
+
+```ts
+const primeFactorsOfOptimized = (n: number): number[] => {
+  const result = [];
+  while (n % 2 === 0) {
+    result.push(2);
+    n = n / 2;
+  }
+
+  for (let i = 3; i <= Math.sqrt(n); i = i + 2) {
+    while (n % i === 0) {
+      result.push(i);
+      n = Math.floor(n / i);
+    }
+  }
+
+  if (n > 2) {
+    result.push(n);
+  }
+  return result;
+};
 ```
 
 ### Beispiel Clojure

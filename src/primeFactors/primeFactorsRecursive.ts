@@ -1,12 +1,15 @@
 const primeFactorsOfRecursive = (
-  input: number,
+  n: number,
   result: number[] = [],
 ): number[] => {
-  for (let n = 2; n < input; n++) {
-    if (input % n === 0) {
-      return primeFactorsOfRecursive(input / n, [...result, n]);
+  for (let divisor = 2; divisor < n; divisor++) {
+    if (n % divisor === 0) {
+      return primeFactorsOfRecursive(Math.floor(n / divisor), [
+        ...result,
+        divisor,
+      ]);
     }
   }
-  return input === 1 ? [] : [...result, input];
+  return n === 1 ? [] : [...result, n];
 };
 export default primeFactorsOfRecursive;
