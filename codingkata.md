@@ -260,7 +260,7 @@ const primeFactorsOfOptimized = (n: number): number[] => {
 
 ### Beispiel Clojure
 
-````clojure
+```clojure
 (defn prime-factors-of [n]
   (factors-starting-at 2 n))
 
@@ -271,11 +271,14 @@ const primeFactorsOfOptimized = (n: number): number[] => {
       (> f (Math/sqrt n)) (if (= n 1) [] (conj result n))
       (zero? (mod n f)) (recur f (/ n f) (conj result f))
       :else (recur (inc f) n result))))
-(deftest prime-factors
-  (fact (prime-factors-of 1) => [])
-)
+      
+  (deftest prime-factors
+    (fact (prime-factors-of 1) => [])
+  )
 ```
+
 ### Beispiel Rust iterativ
+
 ```rust
 pub fn prime_factors(number : int) -> ~[int] {
     let mut number = number;
@@ -291,7 +294,9 @@ pub fn prime_factors(number : int) -> ~[int] {
     return prime_numbers;
 }
 ```
+
 ### Beispiel Rust Recursive
+
 ```rust
 fn prime_factors(num: i64) -> Vec<i64> {
     for i in 2..num {
